@@ -220,3 +220,65 @@ form label {
   color: #333;            /* Rangi ya giza kidogo */
   font-family: Arial, sans-serif;  /* Font nzuri na safi */
 }
+
+
+
+/* 1. Fanya container zako ziwe flexible */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 2. Picha ziwe responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 3. Ongeza typography nzuri na scaling */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* 4. Headers ziwe na padding na alignment nzuri */
+header, nav, footer {
+  padding: 15px;
+  text-align: center;
+}
+
+/* 5. Media Queries kwa screen ndogo (max-width = 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .columns {
+    display: block; /* kama ulikuwa unatumia display: flex au grid */
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
