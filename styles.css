@@ -1,0 +1,222 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Body styles */
+body {
+    font-style: normal;
+    line-height: 1.7;
+    color: #fdfbfb;
+    background-color: #000000;
+}
+
+/* Header and Navigation */
+header {
+    background: #000000f2;
+    backdrop-filter: blur(6px);
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 6px 24px rgba(44, 62, 80, 0.18);
+    border-bottom: 2px solid #3498db33;
+    transition: background 0.4s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2.5rem;
+    animation: navFadeIn 1s ease;
+}
+
+@keyframes navFadeIn {
+    from { opacity: 0; transform: translateY(-30px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 0.5rem;
+    transition: transform 0.2s;
+}
+
+.nav-links li:hover {
+    transform: translateY(-4px) scale(1.10);
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    border-radius: 12px;
+    background-color: #000000;
+    box-shadow: 0 2px 12px rgba(52,152,219,0.09);
+    transition: 
+        background 0.3s, 
+        color 0.3s, 
+        box-shadow 0.3s, 
+        transform 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #000000;
+    transition: width 0.3s, left 0.3s;
+    border-radius: 2px;
+}
+
+.nav-links a:hover::after, .nav-links a.active::after {
+    width: 80%;
+    left: 10%;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background: linear-gradient(90deg, #3498db 60%, #6dd5fa 100%);
+    color: #fff;
+    box-shadow: 0 6px 24px rgba(52,152,219,0.22);
+    transform: scale(1.08);
+}
+.logo img {
+  height: 50px;
+  width: 90px;
+  object-fit: contain;
+}
+
+footer {
+      background: lab(0% 0 0);
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: hsl(180, 100%, 100%);
+      text-decoration: none;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+       background: linear-gradient(90deg, #3498db 60%, #6dd5fa 100%);
+    }
+
+    .picha-kushoto {
+  width: 150px;       /* ukubwa mdogo */
+  float: left;        /* iwe kushoto */
+  margin-right: 15px; /* nafasi kati ya picha na maandishi */
+  border-radius: 10px; /* kona laini */
+}
+ img {
+      transition: transform 1s ease; /* muda wa 1 second */
+      cursor: move;
+    }
+
+    img:hover {
+      transform: scale(1.2); /* zoom in 30% */
+    }
+    .ads-banner {
+  background: #f1c40f;   /* rangi ya manjano (unaweza kubadilisha) */
+  color: #111;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.ads-banner {
+  background: linear-gradient(90deg, #3498db 60%, #6dd5fa 100%);
+  color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.scroll-text {
+  display: inline-block;
+  animation: scroll-left 18s linear infinite;
+}
+
+@keyframes scroll-left {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.header {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  font
+}
+.blue {
+
+}
+.no-animation {
+  transition: none !important;
+  transform: none !important;
+}
+/* Nav container setup */
+
+
+/* DROPDOWN */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  min-width: 200px;
+  
+  z-index: 999;
+}
+
+
+.dropdown-menu li a {
+  padding: 10px 15px;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+form label {
+  display: block;         /* Imeonekana kama block (kwa mistari) */
+  margin-top: 15px;       /* Nafasi juu ya label */
+  margin-bottom: 5px;     /* Nafasi chini ya label */
+  font-weight: 600;       /* Imewekwa kidogo kuonekana wazi */
+  font-size: 16px;        /* Ukubwa sawa na input */
+  color: #333;            /* Rangi ya giza kidogo */
+  font-family: Arial, sans-serif;  /* Font nzuri na safi */
+}
