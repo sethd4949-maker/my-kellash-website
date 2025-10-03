@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 /* Reset default styles */
 * {
     margin: 0;
@@ -32,6 +43,8 @@ header {
     justify-content: flex-end;
     gap: 2.5rem;
     animation: navFadeIn 1s ease;
+    flex-wrap: wrap;
+     overflow-x: auto;
 }
 
 @keyframes navFadeIn {
@@ -220,3 +233,4 @@ form label {
   color: #333;            /* Rangi ya giza kidogo */
   font-family: Arial, sans-serif;  /* Font nzuri na safi */
 }
+
